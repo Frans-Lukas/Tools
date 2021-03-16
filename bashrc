@@ -4,7 +4,7 @@ gitta() {
     while true; do
         read -p "Push, y/n?" yn
         case $yn in
-            [Yy]* ) make install; break;;
+            [Yy]* ) break;;
             [Nn]* ) return;;
             * ) echo "Please answer yes or no.";;
         esac
