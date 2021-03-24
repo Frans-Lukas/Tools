@@ -1,0 +1,6 @@
+<keymap version="1" name="GNOME copy" parent="Default for GNOME">
+  <action id="Macro.doAll">
+    <keyboard-shortcut first-keystroke="ctrl s" />
+  </action>
+  <action id="SaveAll" />
+</keymap>
