@@ -1,6 +1,6 @@
 #!/bin/bash
 cat bashrc >> ~/.bashrc 
-soruce ~/.bashrc
+source ~/.bashrc
 
 copyMacros(){
         for dir in ~/.config/JetBrains/*; do
