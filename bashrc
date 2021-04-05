@@ -13,4 +13,4 @@ gitta() {
     git pull
     git push
 }
-
+bind 'set bell-style none'
