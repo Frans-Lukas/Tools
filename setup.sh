@@ -1,6 +1,9 @@
 #!/bin/bash
+echo "cat:ing bashrc to ~/.bashrc"
 cat bashrc >> ~/.bashrc 
+echo "source ~/.bashrc"
 source ~/.bashrc
+echo "~/.bashrc updated"
 
 copyMacros(){
         for dir in ~/.config/JetBrains/*; do
