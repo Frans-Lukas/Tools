@@ -1,3 +1,10 @@
+# git pull
+alias gitp="git pull"
+# git status
+alias gits="git status"
+
+
+# git add, commit, pull and push. All in one.
 gitta() {
     git add .
     git status
