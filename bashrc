@@ -2,6 +2,10 @@
 alias gitp="git pull"
 # git status
 alias gits="git status"
+# git diff
+alias gitd="git diff"
+# cached diff
+alias gitdc="git diff --cached"
 
 
 # git add, commit, pull and push. All in one.
