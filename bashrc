@@ -10,16 +10,17 @@ alias gitdc="git diff --cached"
 
 # git add, commit, pull and push. All in one.
 gitta() {
-    git add .
     git status
     while true; do
-        read -p "Push, y/n?" yn
+        read -p "Add . & Push, y/n?" yn
         case $yn in
             [Yy]* ) break;;
             [Nn]* ) return;;
             * ) echo "Please answer yes or no.";;
         esac
     done
+    git config --global credential.helper 'cache --timeout=30'
+    git add .
     git commit -m "$1"
     git pull
     git push
