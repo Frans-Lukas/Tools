@@ -6,6 +6,8 @@ alias gits="git status"
 alias gitd="git diff"
 # cached diff
 alias gitdc="git diff --cached"
+# rebase -i
+alias giti="git rebase -i"
 
 
 # git add, commit, pull and push. All in one.
@@ -19,7 +21,6 @@ gitta() {
             * ) echo "Please answer yes or no.";;
         esac
     done
-    git config --global credential.helper 'cache --timeout=30'
     git add .
     git commit -m "$1"
     git pull
